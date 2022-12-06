@@ -12,7 +12,7 @@ by escorting outside. But you need to locate him since he is invisible to humans
 the room where Casper got lost, with a ghost sensor. The details of the sensor is described
 later. Your job is to find Casper and help him get his way back.
 
-###Environment Description
+## Environment Description
 
 Assume the room is an n X m grid with k obstacles. You should take n, m, k and the positions
 of k obstacles as input. Initially, every empty cell (i.e., without any obstacle) of the grid is
@@ -23,7 +23,7 @@ and moving to any of these options is equally likely. The same is true for the r
 for a cumulative probability of 1-P. Note that, you may have to calculate the exact values
 probability of moving from one cell to another based on the obstacles in the adjacent cells.
 
-##Ghost Sensor Specification
+## Ghost Sensor Specification
 
 The ghost sensor is a sophisticated device. When it is placed in a grid cell, it can detect if
 Casper is in the same cell or in any adjacent cell (sharing an edge or corner) by blinking a red
@@ -31,7 +31,8 @@ light (although it cannot pinpoint his location). However, the sensor may someti
 false reading, but you can assume its reading is mostly correct (say 85% times on average).
 At each time step, you can only take sensor reading at exactly one grid cell. Please note,
 presence of obstacles does not impact the ghost sensing capability of the sensor.
-##Task
+
+## Task
 
 I had to model the aforementioned problem using HMM. At each time step, I
 showed the probability of Casper being in a cell for every grid cell both before and after I
